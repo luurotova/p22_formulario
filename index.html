@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1>IRON FIT</h1>
+    </header>
+    <main>
+        <div class="welcome-text">
+            <h2>Formulario</h2>
+            <p>Bienvenidos a este maravitupendo gimnasio donde te vas a poner más fuerte que el vinagre. Està prohibido
+                el uso de telefonos movil a no ser que sea para escuchar música y solo esta permitido grabar si es para
+                comprobar vuestra tecnica o para enviarselo a vuestr@ entrenador/a</p>
+            <p>Gracias y a levantar esos hierros</p>
+        </div>
+        <!-- etiqueta + estructura de un formulario -->
+        <form class="altaGym_formulario" action="recibirData.php" method="post" name="altaGym" enctype="application/x-www-form-urlencoded">
+
+            <!-- input tipo texto -->
+            <div class="form-name">
+                <label class="altaGym_label" for="Nombre y apellidos">Nombre y apellidos</label>
+                <input class="altaGym_input" type="text" required placeholder="inserta aqui tu nombre">
+            </div>
+
+            <!-- input tipo number (poco usable, solo para cantidades bajas)-->
+            <div class="form-age">
+                <label class="altaGym_label" for="altaGym_edad">Introduce tu edad</label>
+                <input class="altaGym_input" type="number" id="altaGym_edad" maxlength="2" min="0">
+            </div>
+
+            <!-- input tipo checkbox -->
+            <div class="form-newsletter">
+                <label class="altaGym_label" for="altaGym_newsletter">Quiero recibir novedades del gimnasio</label>
+                <input class="altaGym_input" type="checkbox" name="" id="altaGym_newsletter" checked>
+            </div>
+    </main>
+
+
+    </form>
+
+</body>
+
+</html>
